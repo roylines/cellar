@@ -1,0 +1,37 @@
+<html>                                                                  
+ <head>                                                                  
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+ <script type="text/javascript">                                         
+$(document).ready(function() {
+  var ads = [{
+    title: "MAGICIANS CLUB Will Goldston / J C Pickstone SIGNED LETTER Magic Poster",
+    img: "http://thumbs3.ebaystatic.com/m/m7x4NPXQV0kO3D7EuUPHcUg/140.jpg",
+    price: 666.66,
+    url: "#"     
+  },
+  {
+    title: "2 - MAGICIANS CLUB Will Goldston / J C Pickstone SIGNED LETTER Magic Poster",
+    img: "http://thumbs3.ebaystatic.com/m/m7x4NPXQV0kO3D7EuUPHcUg/140.jpg",
+    price: 777.77,
+    url: "#"     
+  }];
+
+  jQuery.each(ads, function() {
+  $("#ads").append(
+    '\
+    <li class="span3">\
+    <div class="thumbnail">\
+    <h5>' + this.title + '</h5>\
+    <img src="' + this.img + '" alt="">\
+    <p>Price: £' + this.price + ' <a href="' + this.url + '">Bid Now</a></p>\
+    </div>\
+    </li>');
+  });
+ });
+ </script>                                                               
+ </head>                                                                 
+ <body>
+ <ul id="ads" class="thumbnails">
+</ul>
+ </body>                                                                 
+ </html>

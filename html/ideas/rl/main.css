@@ -1,0 +1,7 @@
+section,article,aside,header,footer,nav,figure {
+  display: block;
+}
+
+header[role="banner"] {
+  font-family: 'Shadows Into Light', cursive;
+}
